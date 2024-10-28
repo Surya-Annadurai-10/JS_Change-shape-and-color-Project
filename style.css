@@ -36,7 +36,7 @@ main{
 .color-box{
     height: 200px;
     width: 200px;
-    background-color: green;
+    background-image: linear-gradient(to right , red, orange);
     border-radius: 50%;
 box-shadow: 0 0 20px rgb(108, 106, 106);
 display: flex;

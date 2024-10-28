@@ -31,7 +31,10 @@ function changeColor(){
     let color1 = generateValue();
     let color2 = generateValue();
     let color3 = generateValue();
-   colorBox.style.backgroundColor = `rgb(${color1} , ${color2}, ${color3})`;
+    let color4 = generateValue();
+    let color5 = generateValue();
+    let color6 = generateValue();
+   colorBox.style.backgroundImage = `linear-gradient(to right, rgb(${color1} , ${color2}, ${color3}), rgb(${color4} , ${color5}, ${color6}))`;
 
 }
 
