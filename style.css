@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Playwrite GB S", serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
+
+header{
+    margin: auto;
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 1px  solid rgb(82, 80, 80);
+}
+
+header h1{
+    text-align: center;
+
+}
+
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.color-box{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-radius: 50%;
+box-shadow: 0 0 20px rgb(108, 106, 106);
+display: flex;
+/* margin-top: 5rem; */
+align-items: center;
+justify-content: center;
+}
+
+.container{
+    width:400px;
+    height: 50vh;
+    background-color: rgb(28, 28, 28);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+   border-radius: 15px;
+   box-shadow: 2px 5px 20px rgb(106, 106, 106);
+}
+
+
+
+
+.color-btn,
+.shape-btn{
+    padding: 1rem 1.5rem;
+    background-color: rgb(88, 7, 88);
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+   transition:0.3s ease-out;
+}
+
+.color-btn:hover,
+.shape-btn:hover{
+   background-color:#ebbbee;
+   color: black;
+   transform: translateY(-7px);
+   box-shadow: 0 10px 20px rgb(88, 88, 88);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+  }
+  
+  .polygon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  .quadrilateral {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+  }
+  
+  .cross {
+    position: relative;
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    transform: rotatez(45deg);
+  }
+  
+  .cross::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+  }
+  
+  .cross::before {
+    width: 20px;
+    height: 100px;
+    transform: rotatez(-90deg);
+    background-color: white;
+  }
+  
+ 
+  
+  .oval {
+    width: 150px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%; 
+  }
+  
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.rectangle {
+    width: 130px;
+    height: 70px;
+    background-color: white;
+}
+
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: white;
+    position: relative;
+    margin: 27.5px 0;
+}
+.hexagon:before, .hexagon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid white;
+}
+.hexagon:after {
+    top: 100%;
+    border-top: 27.5px solid white;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    color: white;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+    margin: 50px;
+}
+
+.star:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid white;
+   
+}
+
+.parallelogram {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    transform: skew(20deg);
+}
+
+.arrow {
+    width: 90px;
+    height: 50px;
+ background-color: white;
+ position: relative;
+}
+.arrow:after {
+    content: '';
+    position: absolute;
+    left: 75%; 
+    top: -50%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid white; 
+}
+
+.ring {
+    width: 100px;
+    height: 100px;
+    border: 15px solid white;
+    border-radius: 50%;
+    background-color: transparent; 
+    position: relative;
+}
+
+.hsquare {
+    width: 100px; 
+    height: 100px; 
+    border: 10px solid white; 
+    background-color: transparent;
+}
+
